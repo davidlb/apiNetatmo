@@ -1,6 +1,6 @@
 {
-    "domain": "saniho",
-    "name": "NetAtmo Favorites",
+    "domain": "apiNetatmo",
+    "name": "Netatmo Favorites",
     "documentation": "",
     "requirements": [
     ],
