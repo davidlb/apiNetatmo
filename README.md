@@ -1,21 +1,22 @@
 # apiNetatmo
-apiNetatmo vous permet de recupere les informations des stations favorits de votre compte NetAtmo
+apiNetatmo vous permet de recuperer les informations des stations favorites de votre compte NetAtmo
 
-
-il suffit d'ajouter le sensor suvant dans votre configuration home assistant
+1. Installer composant manuellement ou ajouter le repo via HACS
+2. Se créer un compte sur https://dev.netatmo.com/ et se créer une app
+3. Ajouter le sensor suivant dans votre configuration home assistant:
 
 
 ```yaml
 - platform: apiNetatmo
   username : <votreusername>
   password : <votrepassword>
-  code: <votrecode>
-  token: <votretoken>
+  code: <clientId>
+  token: <clientSecret>
   host: <une des adresse mac d'un de vos favori>
   scan_interval: 600
 ```
 
 
-Chaque favoris netatmo va creer les sensors selon le type de sensor netatmo( temperature, vent, humidite etc..
+Chaque favori netatmo va creer les sensors selon le type de sensor netatmo( temperature, vent, humidite etc..
 
 ![picture](img/sensor.png)
